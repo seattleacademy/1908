@@ -24,73 +24,18 @@ async function requestExternalImage(imageUrl) {
 
 function renderNavBar(navbarId, exampleUri) {
   const examples = [
-    {
-      uri: 'faceDetection.html',
-      name: 'Face Detection'
-    },
-    {
-      uri: 'faceLandmarkDetection.html',
-      name: 'Face Landmark Detection'
-    },
-    {
-      uri: 'faceExpressionRecognition.html',
-      name: 'Face Expression Recognition'
-    },
-    {
-      uri: 'ageAndGenderRecognition.html',
-      name: 'Age and Gender Recognition'
-    },
-    {
-      uri: 'faceRecognition.html',
-      name: 'Face Recognition'
-    },
+
     {
       uri: 'faceExtraction.html',
       name: 'Face Extraction'
     },
-    {
-      uri: 'videoFaceTracking.html',
-      name: 'Video Face Tracking'
+  {
+      uri: 'saas_face_recognition.html',
+      name: 'saas face recognition'
     },
-    {
-      uri: 'webcamFaceDetection.html',
-      name: 'Webcam Face Detection'
-    },
-    {
-      uri: 'webcamFaceLandmarkDetection.html',
-      name: 'Webcam Face Landmark Detection'
-    },
-    {
-      uri: 'webcamFaceExpressionRecognition.html',
-      name: 'Webcam Face Expression Recognition'
-    },
-    {
-      uri: 'webcamAgeAndGenderRecognition.html',
-      name: 'Webcam Age and Gender Recognition'
-    },
-    {
-      uri: 'bbtFaceLandmarkDetection.html',
-      name: 'BBT Face Landmark Detection'
-    },
-    {
-      uri: 'bbtFaceSimilarity.html',
-      name: 'BBT Face Similarity'
-    },
-    {
-      uri: 'bbtFaceMatching.html',
-      name: 'BBT Face Matching'
-    },
-    {
-      uri: 'bbtFaceRecognition.html',
-      name: 'BBT Face Recognition'
-    },
-    {
-      uri: 'batchFaceLandmarks.html',
-      name: 'Batch Face Landmark Detection'
-    },
-    {
-      uri: 'batchFaceRecognition.html',
-      name: 'Batch Face Recognition'
+      {
+      uri: 'uploadface.html',
+      name: 'upload face'
     }
   ]
 
