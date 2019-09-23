@@ -1,5 +1,6 @@
 <?php
-$target_dir = "uploads/";
+$target_dir = "/var/www/faces/"; //global directory
+$target_dir = "faces/"; // local directory, use chmod 777 faces to give write access to the server
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $target_file = strtolower($target_file);
 $uploadOk = 1;
@@ -44,7 +45,7 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_dir . $baseFile . "." . $counter . "."  . $imageFileType)) {
         echo $target_dir . $baseFile . "." . $counter . "."  . $imageFileType . " has been uploaded.";
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        print_r(error_get_last());
     }
 }
 ?>
